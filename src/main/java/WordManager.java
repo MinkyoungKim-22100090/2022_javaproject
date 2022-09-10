@@ -28,6 +28,12 @@ public class WordManager{
             if(menu==1) {
                 wordCRUD.listAll();
             }
+            if(menu==5){
+                wordCRUD.updateItem();
+            }
+            if(menu==6){
+                //wordCRUD.
+            }
 
         }
     }
