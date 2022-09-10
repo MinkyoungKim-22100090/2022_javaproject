@@ -18,6 +18,7 @@ public class WordManager{
         wordCRUD = new WordCRUD(s);
     }
     public void start() {
+        wordCRUD.loadFile();
         while (true) {
             int menu=selectMenu();
             if(menu==0) break;
@@ -30,7 +31,7 @@ public class WordManager{
             if(menu==5){ //update
                 wordCRUD.updateItem();
             }
-            if(menu==6){ //delete
+            if(menu==6) { //delete
                 wordCRUD.deleteItem();
             }
 
