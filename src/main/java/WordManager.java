@@ -21,18 +21,17 @@ public class WordManager{
         while (true) {
             int menu=selectMenu();
             if(menu==0) break;
-            if(menu==4) {
-                //create
-                wordCRUD.addWord();
+            if(menu==4) {//create
+                wordCRUD.addItem();
             }
-            if(menu==1) {
+            if(menu==1) {//list 보여주기
                 wordCRUD.listAll();
             }
-            if(menu==5){
+            if(menu==5){ //update
                 wordCRUD.updateItem();
             }
-            if(menu==6){
-                //wordCRUD.
+            if(menu==6){ //delete
+                wordCRUD.deleteItem();
             }
 
         }
