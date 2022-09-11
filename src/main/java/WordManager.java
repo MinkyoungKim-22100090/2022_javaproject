@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class WordManager{
@@ -17,22 +18,31 @@ public class WordManager{
     WordManager(){
         wordCRUD = new WordCRUD(s);
     }
-    public void start() {
-        wordCRUD.loadFile();
+    public void start(){
+       wordCRUD.loadFile();
         while (true) {
             int menu=selectMenu();
             if(menu==0) break;
-            if(menu==4) {//create
-                wordCRUD.addItem();
-            }
             if(menu==1) {//list 보여주기
                 wordCRUD.listAll();
+            }
+            if(menu==2) {//create
+                wordCRUD.searchlevel();
+            }
+            if(menu==3) {//create
+                wordCRUD.searchWord();
+            }
+            if(menu==4) {//create
+                wordCRUD.addItem();
             }
             if(menu==5){ //update
                 wordCRUD.updateItem();
             }
             if(menu==6) { //delete
                 wordCRUD.deleteItem();
+            }
+            if(menu==7) { //delete
+                wordCRUD.saveFile();
             }
 
         }
