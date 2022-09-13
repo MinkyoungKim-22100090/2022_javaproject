@@ -2,10 +2,10 @@
 2|human|사람
 3|autumn|가을
 1|between|사이에
-bicycle|자전거
+1|bicycle|자전거
 3|carpenter|목공
 1|carry|나르다
-dollar|달러
+2|dollar|달러
 3|dolphin|돌고래
 1|door|문
 3|follow|따르다
