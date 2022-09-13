@@ -28,6 +28,7 @@ public class WordCRUD implements ICRUD{
         Word one = (Word)add(); //casting
         list.add(one);
         System.out.println("새 단어가 단어장에 추가되었습니다. ");
+        System.out.println();
     }
 
     @Override
@@ -54,6 +55,7 @@ public class WordCRUD implements ICRUD{
             System.out.println(list.get(i).toString());
         }
         System.out.println("----------------------");
+        System.out.println();
     }
 
     public ArrayList<Integer> listAll(String keyword) {
@@ -69,6 +71,7 @@ public class WordCRUD implements ICRUD{
             j++;
         }
         System.out.println("----------------------");
+        System.out.println();
         return idlist;
     }
 
@@ -83,6 +86,7 @@ public class WordCRUD implements ICRUD{
             j++;
         }
         System.out.println("----------------------");
+        System.out.println();
     }
 
     public void updateItem() {
@@ -98,6 +102,7 @@ public class WordCRUD implements ICRUD{
         Word word=list.get(idlist.get(id-1));
         word.setMeaning(meaning);
         System.out.println("단어가 수정되었습니다. ");
+        System.out.println();
     }
 
     public void deleteItem() {
@@ -115,6 +120,7 @@ public class WordCRUD implements ICRUD{
             System.out.println("단어가 삭제되었습니다. ");
         }else
             System.out.println("취소되었습니다. ");
+            System.out.println();
     }
 
     public void loadFile(){
@@ -125,7 +131,8 @@ public class WordCRUD implements ICRUD{
 
             while(true) {
                 line = br.readLine();
-                if(line==null) break;
+                //System.out.println("line = " + line);
+                if((line=br.readLine())==null) break;
 
                 String data[] = line.split("\\|");
                 int level=Integer.parseInt(data[0]);
@@ -136,6 +143,7 @@ public class WordCRUD implements ICRUD{
             }
             br.close();
             System.out.println("==> "+count+"개 로딩 완료!!!");
+            System.out.println();
         }catch(IOException e){
             e.printStackTrace();
         }
@@ -150,6 +158,7 @@ public class WordCRUD implements ICRUD{
             }
             pr.close();
             System.out.println("==> 데이터 저장 완료 !!!");
+            System.out.println();
         }catch (IOException e) {
             e.printStackTrace();
         }
