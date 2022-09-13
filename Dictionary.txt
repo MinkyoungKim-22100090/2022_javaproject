@@ -41,4 +41,3 @@ dollar|달러
 3|quiet|조용한
 1|rice|쌀
 3|rich|부유한
-
