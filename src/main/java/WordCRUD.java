@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class WordCRUD implements ICRUD{
     ArrayList<Word> list;
-    Scanner s= new Scanner(System.in);
+    Scanner s;
     final String fname="Dictionary.txt";
 
-    WordCRUD(Scanner s2){
+    WordCRUD(Scanner s){
         list = new ArrayList<>();
         this.s=s;
     }
@@ -132,7 +132,7 @@ public class WordCRUD implements ICRUD{
             while(true) {
                 line = br.readLine();
                 //System.out.println("line = " + line);
-                if((line=br.readLine())==null) break;
+                if(line==null) break;
 
                 String data[] = line.split("\\|");
                 int level=Integer.parseInt(data[0]);
@@ -165,13 +165,13 @@ public class WordCRUD implements ICRUD{
     }
 
     public void searchlevel() {
-        System.out.println("==> 원하는 레벨은? (1~3) : ");
+        System.out.print("==> 원하는 레벨은? (1~3) : ");
         int level = s.nextInt();
         listAll(level);
     }
 
     public void searchWord() {
-        System.out.println("=> 원하는 단어는? ");
+        System.out.print("=> 검색할 단어 입력: ");
         String keyword=s.next();
         listAll(keyword);
     }
