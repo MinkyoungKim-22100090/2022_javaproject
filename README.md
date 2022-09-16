@@ -14,3 +14,7 @@
 <img src='https://github.com/MinkyoungKim-22100090/2022_javaproject/blob/master/screenshot/2-2.png?raw=true'>
 <img src='https://github.com/MinkyoungKim-22100090/2022_javaproject/blob/master/screenshot/2-3.png?raw=true'>
 <img src='https://github.com/MinkyoungKim-22100090/2022_javaproject/blob/master/screenshot/2-4.png?raw=true'>
+<img src='https://github.com/MinkyoungKim-22100090/2022_javaproject/blob/master/screenshot/2-5.png?raw=true'>
+<img src='https://github.com/MinkyoungKim-22100090/2022_javaproject/blob/master/screenshot/2-6.png?raw=true'>
+<img src='https://github.com/MinkyoungKim-22100090/2022_javaproject/blob/master/screenshot/2-7.png?raw=true'>
+<img src='https://github.com/MinkyoungKim-22100090/2022_javaproject/blob/master/screenshot/2-8.png?raw=true'>
